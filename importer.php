@@ -36,6 +36,13 @@ function acui_import_users( $file, $form_data, $attach_id = 0, $is_cron = false 
 				}
 			}
 
+			$courses_query = new WP_Query(array(
+				'post_type' => 'course',
+				'posts_per_page' => -1,
+			));
+
+			wp_reset_query();
+
 			$users_registered = array();
 			$headers = array();
 			$headers_filtered = array();
@@ -407,6 +414,21 @@ function acui_import_users( $file, $form_data, $attach_id = 0, $is_cron = false 
 								    continue;
 								}
 								elseif( $headers[ $i ] == 'bp_group_role' ){
+									continue;
+								}
+								elseif( $headers[ $i ] == 'Course' && $courses_query && count($courses_query->posts) > 0){
+									// $user_id
+									$user_course_name = strtolower($data[$i]);
+									$user_course_name = preg_replace('/[,:.!&\s+]/', '', $user_course_name);
+
+									foreach ($courses_query->posts as $course) {
+										$course_name = strtolower($course->post_title);
+										$course_name = preg_replace('/[,:.!&\s+]/', '', $course_name);
+
+										if ($user_course_name === $course_name) {
+											 Sensei_Utils::user_start_course( $user_id, $course->ID );
+										}
+									}
 									continue;
 								}
 								else{ // wp_usermeta data
