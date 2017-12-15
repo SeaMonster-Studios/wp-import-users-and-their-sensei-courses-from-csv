@@ -2,7 +2,7 @@
 /*
 Plugin Name:	Import Users and their Sensei courses from CSV
 Plugin URI:		https://www.seamonsterstudios.com
-Description:	This plugins allows to importing users and their respective Sensei courses using CSV files to WP database automatically
+Description:	Import users and their respective Sensei courses to WP using CSV
 Version:		1.0
 Author:			SeaMonster Studios
 Author URI: 	https://www.seamonsterstudios.com
