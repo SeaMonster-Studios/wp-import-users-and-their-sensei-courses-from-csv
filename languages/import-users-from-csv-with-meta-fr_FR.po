@@ -203,12 +203,12 @@ msgid "If this is set to no, the values below are ignored."
 msgstr ""
 "Si cette valeur est définie sur non, les valeurs ci-dessous sont ignorées."
 
-#: smtp.php:218 importer.php:830 import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:195
+#: smtp.php:218 importer.php:830 import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:195
 msgid "Username"
 msgstr "Nom d’utilisateur"
 
-#: smtp.php:222 import-users-from-csv-with-meta.php:195
+#: smtp.php:222 import-users-and-their-sensei-courses-from-csv.php:195
 msgid "Password"
 msgstr "Mot de passe"
 
@@ -354,8 +354,8 @@ msgstr ""
 "strong> et prenez également note des majuscules, cette extension est "
 "<strong>sensible à la casse</strong>."
 
-#: importer.php:529 import-users-from-csv-with-meta.php:96
-#: import-users-from-csv-with-meta.php:202
+#: importer.php:529 import-users-and-their-sensei-courses-from-csv.php:96
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Import Users, Sensei Courses from CSV"
 msgstr "Importer des utilisateurs à partir de CSV"
 
@@ -637,7 +637,7 @@ msgstr ""
 msgid "There is no columns loaded yet"
 msgstr "Il n'y a pas de colonnes chargées"
 
-#: importer.php:823 import-users-from-csv-with-meta.php:202
+#: importer.php:823 import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -867,7 +867,7 @@ msgstr "fichier"
 msgid "to test"
 msgstr "pour tester"
 
-#: importer.php:936 import-users-from-csv-with-meta.php:202
+#: importer.php:936 import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Mail options"
 msgstr "Options de courriel"
 
@@ -1092,97 +1092,97 @@ msgstr ""
 "Nous travaillons tous les jours avec WordPress et WooCommerce, si vous avez "
 "besoin d'aide, envoyez-nous un message à"
 
-#: import-users-from-csv-with-meta.php:51
-#: import-users-from-csv-with-meta.php:198
+#: import-users-and-their-sensei-courses-from-csv.php:51
+#: import-users-and-their-sensei-courses-from-csv.php:198
 msgid "Welcome to"
 msgstr "Bienvenue à"
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:195
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:195
 msgid "Welcome,"
 msgstr "Bienvenue,"
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:195
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:195
 msgid "Your data to login in this site is:"
 msgstr "Vos données pour vous connecter sur ce site sont les suivantes :"
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:195
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:195
 msgid "URL to login"
 msgstr "URL de connexion"
 
-#: import-users-from-csv-with-meta.php:96
+#: import-users-and-their-sensei-courses-from-csv.php:96
 msgid "Insert users massively (CSV)"
 msgstr "Insérer des utilisateurs massivement (CSV)"
 
-#: import-users-from-csv-with-meta.php:97
+#: import-users-and-their-sensei-courses-from-csv.php:97
 msgid "SMTP Configuration"
 msgstr "Configuration SMTP"
 
-#: import-users-from-csv-with-meta.php:103
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:103
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Donate"
 msgstr "Faites un don"
 
-#: import-users-from-csv-with-meta.php:104
+#: import-users-and-their-sensei-courses-from-csv.php:104
 msgid "Premium support"
 msgstr "Assistance Premium"
 
-#: import-users-from-csv-with-meta.php:105
+#: import-users-and-their-sensei-courses-from-csv.php:105
 msgid "Premium plugins"
 msgstr "Extensions Premium"
 
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Customs columns loaded"
 msgstr "Colonnes personnalisées"
 
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Cron import"
 msgstr "Automatisation"
 
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Shop"
 msgstr "Boutique"
 
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Hire an expert"
 msgstr "Embaucher un expert"
 
-#: import-users-from-csv-with-meta.php:242
+#: import-users-and-their-sensei-courses-from-csv.php:242
 msgid "Error, we cannot find the file"
 msgstr "Erreur, impossible de trouver le fichier"
 
-#: import-users-from-csv-with-meta.php:286
+#: import-users-and-their-sensei-courses-from-csv.php:286
 msgid "Unable to write to directory. Is this directory writable by the server?"
 msgstr ""
 "Impossible d'écrire dans le répertoire. Ce répertoire est-il accessible en "
 "écriture par le serveur ?"
 
-#: import-users-from-csv-with-meta.php:294
+#: import-users-and-their-sensei-courses-from-csv.php:294
 msgid "Error, the file"
 msgstr "Erreur, le fichier"
 
-#: import-users-from-csv-with-meta.php:294
+#: import-users-and-their-sensei-courses-from-csv.php:294
 msgid "could not moved to"
 msgstr "ne peut pas être déplacé à"
 
-#: import-users-from-csv-with-meta.php:323
+#: import-users-and-their-sensei-courses-from-csv.php:323
 msgid "Mail template updated correctly"
 msgstr "Modèle de courriel mis à jour correctement"
 
-#: import-users-from-csv-with-meta.php:370
+#: import-users-and-their-sensei-courses-from-csv.php:370
 msgid "Settings updated correctly"
 msgstr "Paramètres mis à jour correctement"
 
-#: import-users-from-csv-with-meta.php:376
+#: import-users-and-their-sensei-courses-from-csv.php:376
 msgid "Import cron task starts at"
 msgstr "La tâche cron d’importation commence à"
 
-#: import-users-from-csv-with-meta.php:397
+#: import-users-and-their-sensei-courses-from-csv.php:397
 msgid "--Finished at"
 msgstr "-- Finis à"
 
-#: import-users-from-csv-with-meta.php:506
+#: import-users-and-their-sensei-courses-from-csv.php:506
 msgid "You are not an adminstrator"
 msgstr "Vous n'êtes pas un administrateur"

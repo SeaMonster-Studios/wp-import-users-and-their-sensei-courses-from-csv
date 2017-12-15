@@ -24,118 +24,118 @@ msgstr ""
 "X-Generator: Poedit 1.8.9\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: import-users-from-csv-with-meta.php:51
-#: import-users-from-csv-with-meta.php:204
+#: import-users-and-their-sensei-courses-from-csv.php:51
+#: import-users-and-their-sensei-courses-from-csv.php:204
 msgid "Welcome to"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:201
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:201
 msgid "Welcome,"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:201
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:201
 msgid "Your data to login in this site is:"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:201
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:201
 msgid "URL to login"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:201 importer.php:834 smtp.php:218
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:201 importer.php:834 smtp.php:218
 msgid "Username"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:102
+#: import-users-and-their-sensei-courses-from-csv.php:102
 msgid "Insert users massively (CSV)"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:102
-#: import-users-from-csv-with-meta.php:208 importer.php:533
+#: import-users-and-their-sensei-courses-from-csv.php:102
+#: import-users-and-their-sensei-courses-from-csv.php:208 importer.php:533
 msgid "Import Users, Sensei Courses from CSV"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:103
+#: import-users-and-their-sensei-courses-from-csv.php:103
 msgid "SMTP Configuration"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:109
-#: import-users-from-csv-with-meta.php:208
+#: import-users-and-their-sensei-courses-from-csv.php:109
+#: import-users-and-their-sensei-courses-from-csv.php:208
 msgid "Donate"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:110
+#: import-users-and-their-sensei-courses-from-csv.php:110
 msgid "Premium support"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:111
+#: import-users-and-their-sensei-courses-from-csv.php:111
 msgid "Premium plugins"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:201 smtp.php:222
+#: import-users-and-their-sensei-courses-from-csv.php:201 smtp.php:222
 msgid "Password"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:208
+#: import-users-and-their-sensei-courses-from-csv.php:208
 msgid "Customs columns loaded"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:208 importer.php:940
+#: import-users-and-their-sensei-courses-from-csv.php:208 importer.php:940
 msgid "Mail options"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:208 importer.php:827
+#: import-users-and-their-sensei-courses-from-csv.php:208 importer.php:827
 msgid "Documentation"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:208
+#: import-users-and-their-sensei-courses-from-csv.php:208
 msgid "Cron import"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:208
+#: import-users-and-their-sensei-courses-from-csv.php:208
 msgid "Shop"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:208
+#: import-users-and-their-sensei-courses-from-csv.php:208
 msgid "Hire an expert"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:248
+#: import-users-and-their-sensei-courses-from-csv.php:248
 msgid "Error, we cannot find the file"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:292
+#: import-users-and-their-sensei-courses-from-csv.php:292
 msgid "Unable to write to directory. Is this directory writable by the server?"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:300
+#: import-users-and-their-sensei-courses-from-csv.php:300
 msgid "Error, the file"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:300
+#: import-users-and-their-sensei-courses-from-csv.php:300
 msgid "could not moved to"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:329
+#: import-users-and-their-sensei-courses-from-csv.php:329
 msgid "Mail template updated correctly"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:382
+#: import-users-and-their-sensei-courses-from-csv.php:382
 msgid "Settings updated correctly"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:388
+#: import-users-and-their-sensei-courses-from-csv.php:388
 msgid "Import cron task starts at"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:409
+#: import-users-and-their-sensei-courses-from-csv.php:409
 msgid "--Finished at"
 msgstr ""
 
-#: import-users-from-csv-with-meta.php:535
+#: import-users-and-their-sensei-courses-from-csv.php:535
 msgid "You are not an adminstrator"
 msgstr ""
 

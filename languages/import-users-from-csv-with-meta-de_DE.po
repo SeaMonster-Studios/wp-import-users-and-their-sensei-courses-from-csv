@@ -195,12 +195,12 @@ msgstr "Ja: Authentifizerung verwenden."
 msgid "If this is set to no, the values below are ignored."
 msgstr "Falls nein gesetzt ist, werden die folgenden Eingaben ignoriert."
 
-#: smtp.php:218 importer.php:830 import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:195
+#: smtp.php:218 importer.php:830 import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:195
 msgid "Username"
 msgstr "Benutzername"
 
-#: smtp.php:222 import-users-from-csv-with-meta.php:195
+#: smtp.php:222 import-users-and-their-sensei-courses-from-csv.php:195
 msgid "Password"
 msgstr "Passwort"
 
@@ -340,8 +340,8 @@ msgstr ""
 "beachte auch die Groß- und Kleinschreibung, Dieses Plugin ist <strong>case "
 "sensitive</strong>."
 
-#: importer.php:529 import-users-from-csv-with-meta.php:96
-#: import-users-from-csv-with-meta.php:202
+#: importer.php:529 import-users-and-their-sensei-courses-from-csv.php:96
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Import Users, Sensei Courses from CSV"
 msgstr "Benutzer aus CSV importieren"
 
@@ -616,7 +616,7 @@ msgstr ""
 msgid "There is no columns loaded yet"
 msgstr "Noch keine Spalten geladen"
 
-#: importer.php:823 import-users-from-csv-with-meta.php:202
+#: importer.php:823 import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Documentation"
 msgstr "Dokumentation"
 
@@ -836,7 +836,7 @@ msgstr "Datei"
 msgid "to test"
 msgstr "zum Testen"
 
-#: importer.php:936 import-users-from-csv-with-meta.php:202
+#: importer.php:936 import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Mail options"
 msgstr "Mail Optionen"
 
@@ -1055,97 +1055,97 @@ msgstr ""
 "Wir arbeiten täglich mit WordPress und WooCommerce, wenn du Hilfe benötigst, "
 "beauftrage uns, sende eine Nachricht an"
 
-#: import-users-from-csv-with-meta.php:51
-#: import-users-from-csv-with-meta.php:198
+#: import-users-and-their-sensei-courses-from-csv.php:51
+#: import-users-and-their-sensei-courses-from-csv.php:198
 msgid "Welcome to"
 msgstr "Willkommen bei"
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:195
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:195
 msgid "Welcome,"
 msgstr "Willkommen,"
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:195
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:195
 msgid "Your data to login in this site is:"
 msgstr "Deine Daten zum Login sind:"
 
-#: import-users-from-csv-with-meta.php:52
-#: import-users-from-csv-with-meta.php:195
+#: import-users-and-their-sensei-courses-from-csv.php:52
+#: import-users-and-their-sensei-courses-from-csv.php:195
 msgid "URL to login"
 msgstr "URL zum Login"
 
-#: import-users-from-csv-with-meta.php:96
+#: import-users-and-their-sensei-courses-from-csv.php:96
 msgid "Insert users massively (CSV)"
 msgstr "Massenimport von Benutzers (CSV)"
 
-#: import-users-from-csv-with-meta.php:97
+#: import-users-and-their-sensei-courses-from-csv.php:97
 msgid "SMTP Configuration"
 msgstr "SMTP Konfiguration"
 
-#: import-users-from-csv-with-meta.php:103
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:103
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Donate"
 msgstr "Spenden"
 
-#: import-users-from-csv-with-meta.php:104
+#: import-users-and-their-sensei-courses-from-csv.php:104
 msgid "Premium support"
 msgstr "Premium Support"
 
-#: import-users-from-csv-with-meta.php:105
+#: import-users-and-their-sensei-courses-from-csv.php:105
 msgid "Premium plugins"
 msgstr "Premium Plugins"
 
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Customs columns loaded"
 msgstr "Benutzerdefinierte Spalten geladen"
 
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Cron import"
 msgstr "Zeitgesteuerter Import"
 
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Shop"
 msgstr "Shop"
 
-#: import-users-from-csv-with-meta.php:202
+#: import-users-and-their-sensei-courses-from-csv.php:202
 msgid "Hire an expert"
 msgstr "Beauftrage einen Experten"
 
-#: import-users-from-csv-with-meta.php:242
+#: import-users-and-their-sensei-courses-from-csv.php:242
 msgid "Error, we cannot find the file"
 msgstr "Fehler, die Datei wurde nicht gefunden"
 
-#: import-users-from-csv-with-meta.php:286
+#: import-users-and-their-sensei-courses-from-csv.php:286
 msgid "Unable to write to directory. Is this directory writable by the server?"
 msgstr ""
 "Verzeichnis ist nicht beschreibbar. Ist das Verzeichnis durch den Server "
 "beschreibbar?"
 
-#: import-users-from-csv-with-meta.php:294
+#: import-users-and-their-sensei-courses-from-csv.php:294
 msgid "Error, the file"
 msgstr "Fehler, die Datei"
 
-#: import-users-from-csv-with-meta.php:294
+#: import-users-and-their-sensei-courses-from-csv.php:294
 msgid "could not moved to"
 msgstr "konnte nicht verschoben werden nach"
 
-#: import-users-from-csv-with-meta.php:323
+#: import-users-and-their-sensei-courses-from-csv.php:323
 msgid "Mail template updated correctly"
 msgstr "Mailvorlage korrekt angepasst"
 
-#: import-users-from-csv-with-meta.php:370
+#: import-users-and-their-sensei-courses-from-csv.php:370
 msgid "Settings updated correctly"
 msgstr "Einstellungen korrekt angepasst"
 
-#: import-users-from-csv-with-meta.php:376
+#: import-users-and-their-sensei-courses-from-csv.php:376
 msgid "Import cron task starts at"
 msgstr "Zeitgesteuerter Import beginnt um"
 
-#: import-users-from-csv-with-meta.php:397
+#: import-users-and-their-sensei-courses-from-csv.php:397
 msgid "--Finished at"
 msgstr "--Beendet um"
 
-#: import-users-from-csv-with-meta.php:506
+#: import-users-and-their-sensei-courses-from-csv.php:506
 msgid "You are not an adminstrator"
 msgstr "Du bist kein Administrator"

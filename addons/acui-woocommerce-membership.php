@@ -15,8 +15,8 @@ function acui_wm_restricted_fields( $acui_restricted_fields ){
 function acui_wm_documentation_after_plugins_activated(){
 	?>
 	<tr valign="top">
-		<th scope="row"><?php _e( "WooCommerce Membership is activated", 'import-users-from-csv-with-meta' ); ?></th>
-		<td><?php _e( "You can use the <strong>columns in the CSV format created by WooCommercer Membership</strong> in order to import data from this plugin.", 'import-users-from-csv-with-meta' ); ?>. <a href="https://docs.woocommerce.com/document/woocommerce-memberships-import-and-export/"><?php _e( "Read more about columns and formats", 'import-users-from-csv-with-meta' ); ?></a>
+		<th scope="row"><?php _e( "WooCommerce Membership is activated", 'import-users-and-their-sensei-courses-from-csv' ); ?></th>
+		<td><?php _e( "You can use the <strong>columns in the CSV format created by WooCommercer Membership</strong> in order to import data from this plugin.", 'import-users-and-their-sensei-courses-from-csv' ); ?>. <a href="https://docs.woocommerce.com/document/woocommerce-memberships-import-and-export/"><?php _e( "Read more about columns and formats", 'import-users-and-their-sensei-courses-from-csv' ); ?></a>
 		</td>
 	</tr>
 	<?php

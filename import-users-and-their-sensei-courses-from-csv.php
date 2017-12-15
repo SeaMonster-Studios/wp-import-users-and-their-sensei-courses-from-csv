@@ -59,7 +59,7 @@ function acui_loader(){
 }
 
 function acui_init(){
-	load_plugin_textdomain( 'import-users-from-csv-with-meta', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+	load_plugin_textdomain( 'import-users-and-their-sensei-courses-from-csv', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 
 	acui_activate();
 }
@@ -74,8 +74,8 @@ function acui_activate(){
 
 	add_option( "acui_columns" );
 
-	add_option( "acui_mail_subject", __('Welcome to', 'import-users-from-csv-with-meta') . ' ' . get_bloginfo("name"), '', false );
-	add_option( "acui_mail_body", __('Welcome,', 'import-users-from-csv-with-meta') . '<br/>' . __('Your data to login in this site is:', 'import-users-from-csv-with-meta') . '<br/><ul><li>' . __('URL to login', 'import-users-from-csv-with-meta') . ': **loginurl**</li><li>' . __( 'Username', 'import-users-from-csv-with-meta') . '= **username**</li><li>Password = **password**</li></ul>', '', false );
+	add_option( "acui_mail_subject", __('Welcome to', 'import-users-and-their-sensei-courses-from-csv') . ' ' . get_bloginfo("name"), '', false );
+	add_option( "acui_mail_body", __('Welcome,', 'import-users-and-their-sensei-courses-from-csv') . '<br/>' . __('Your data to login in this site is:', 'import-users-and-their-sensei-courses-from-csv') . '<br/><ul><li>' . __('URL to login', 'import-users-and-their-sensei-courses-from-csv') . ': **loginurl**</li><li>' . __( 'Username', 'import-users-and-their-sensei-courses-from-csv') . '= **username**</li><li>Password = **password**</li></ul>', '', false );
 
 	add_option( "acui_cron_activated", false );
 	add_option( "acui_cron_send_mail", false );
@@ -140,15 +140,13 @@ function acui_get_restricted_fields(){
 }
 
 function acui_menu() {
-	add_submenu_page( 'tools.php', __( 'Insert users massively (CSV)', 'import-users-from-csv-with-meta' ), __( 'Import Users, Sensei Courses from CSV', 'import-users-from-csv-with-meta' ), 'create_users', 'acui', 'acui_options' );
+	add_submenu_page( 'tools.php', __( 'Insert users massively (CSV)', 'import-users-and-their-sensei-courses-from-csv' ), __( 'Import Users, Sensei Courses from CSV', 'import-users-and-their-sensei-courses-from-csv' ), 'create_users', 'acui', 'acui_options' );
 }
 
 function acui_plugin_row_meta( $links, $file ){
 	if ( strpos( $file, basename( __FILE__ ) ) !== false ) {
 		$new_links = array(
-					'<a href="https://www.paypal.me/codection" target="_blank">' . __( 'Donate', 'import-users-from-csv-with-meta' ) . '</a>',
-					'<a href="mailto:contacto@codection.com" target="_blank">' . __( 'Premium support', 'import-users-from-csv-with-meta' ) . '</a>',
-					'<a href="http://codection.com/tienda" target="_blank">' . __( 'Premium plugins', 'import-users-from-csv-with-meta' ) . '</a>',
+					'<a href="https://github.com/SeaMonster-Studios/wp-import-users-and-their-sensei-courses-from-csv" target="_blank">' . __( 'Repo', 'import-users-and-their-sensei-courses-from-csv' ) . '</a>',
 				);
 
 		$links = array_merge( $links, $new_links );
@@ -238,23 +236,23 @@ function acui_get_editable_roles() {
 
 function acui_check_options(){
 	if( get_option( "acui_mail_body" ) == "" )
-		update_option( "acui_mail_body", __( 'Welcome,', 'import-users-from-csv-with-meta' ) . '<br/>' . __( 'Your data to login in this site is:', 'import-users-from-csv-with-meta' ) . '<br/><ul><li>' . __( 'URL to login', 'import-users-from-csv-with-meta' ) . ': **loginurl**</li><li>' . __( 'Username', 'import-users-from-csv-with-meta' ) . ' = **username**</li><li>' . __( 'Password', 'import-users-from-csv-with-meta' ) . ' = **password**</li></ul>' );
+		update_option( "acui_mail_body", __( 'Welcome,', 'import-users-and-their-sensei-courses-from-csv' ) . '<br/>' . __( 'Your data to login in this site is:', 'import-users-and-their-sensei-courses-from-csv' ) . '<br/><ul><li>' . __( 'URL to login', 'import-users-and-their-sensei-courses-from-csv' ) . ': **loginurl**</li><li>' . __( 'Username', 'import-users-and-their-sensei-courses-from-csv' ) . ' = **username**</li><li>' . __( 'Password', 'import-users-and-their-sensei-courses-from-csv' ) . ' = **password**</li></ul>' );
 
 	if( get_option( "acui_mail_subject" ) == "" )
-		update_option( "acui_mail_subject", __('Welcome to','import-users-from-csv-with-meta') . ' ' . get_bloginfo("name") );
+		update_option( "acui_mail_subject", __('Welcome to','import-users-and-their-sensei-courses-from-csv') . ' ' . get_bloginfo("name") );
 }
 
 function acui_admin_tabs( $current = 'homepage' ) {
     $tabs = array(
-    		'homepage' => __( 'Import Users, Sensei Courses from CSV', 'import-users-from-csv-with-meta' ),
-    		'columns' => __( 'Extra profile fields', 'import-users-from-csv-with-meta' ),
-    		'mail-options' => __( 'Mail options', 'import-users-from-csv-with-meta' ),
-    		'smtp-settings' => __( 'SMTP settings', 'import-users-from-csv-with-meta' ),
-    		'doc' => __( 'Documentation', 'import-users-from-csv-with-meta' ),
-    		'cron' => __( 'Cron import', 'import-users-from-csv-with-meta' ),
-    		'donate' => __( 'Donate', 'import-users-from-csv-with-meta' ),
-    		'shop' => __( 'Shop', 'import-users-from-csv-with-meta' ),
-    		'help' => __( 'Hire an expert', 'import-users-from-csv-with-meta' )
+    		'homepage' => __( 'Import Users, Sensei Courses from CSV', 'import-users-and-their-sensei-courses-from-csv' ),
+    		'columns' => __( 'Extra profile fields', 'import-users-and-their-sensei-courses-from-csv' ),
+    		'mail-options' => __( 'Mail options', 'import-users-and-their-sensei-courses-from-csv' ),
+    		'smtp-settings' => __( 'SMTP settings', 'import-users-and-their-sensei-courses-from-csv' ),
+    		'doc' => __( 'Documentation', 'import-users-and-their-sensei-courses-from-csv' ),
+    		'cron' => __( 'Cron import', 'import-users-and-their-sensei-courses-from-csv' ),
+    		'donate' => __( 'Donate', 'import-users-and-their-sensei-courses-from-csv' ),
+    		'shop' => __( 'Shop', 'import-users-and-their-sensei-courses-from-csv' ),
+    		'help' => __( 'Hire an expert', 'import-users-and-their-sensei-courses-from-csv' )
     );
 
     echo '<div id="icon-themes" class="icon32"><br></div>';
@@ -289,7 +287,7 @@ function acui_fileupload_process( $form_data, $is_cron = false ) {
   if( empty( $uploadfiles["name"][0] ) ):
 
   	  if( !file_exists ( $path_to_file ) )
-  			wp_die( __( 'Error, we cannot find the file', 'import-users-from-csv-with-meta' ) . ": $path_to_file" );
+  			wp_die( __( 'Error, we cannot find the file', 'import-users-and-their-sensei-courses-from-csv' ) . ": $path_to_file" );
 
   	acui_import_users( $path_to_file, $form_data, 0, $is_cron );
 
@@ -333,7 +331,7 @@ function acui_fileupload_process( $form_data, $is_cron = false ) {
 			 * Check write permissions
 			 */
 			if ( !is_writeable( $upload_dir['path'] ) ) {
-			  wp_die( __( 'Unable to write to directory. Is this directory writable by the server?', 'import-users-from-csv-with-meta' ));
+			  wp_die( __( 'Unable to write to directory. Is this directory writable by the server?', 'import-users-and-their-sensei-courses-from-csv' ));
 			  return;
 			}
 
@@ -341,7 +339,7 @@ function acui_fileupload_process( $form_data, $is_cron = false ) {
 			 * Save temporary file to uploads dir
 			 */
 			if ( !@move_uploaded_file($filetmp, $filedest) ){
-			  wp_die( __( 'Error, the file', 'import-users-from-csv-with-meta' ) . " $filetmp " . __( 'could not moved to', 'import-users-from-csv-with-meta' ) . " : $filedest");
+			  wp_die( __( 'Error, the file', 'import-users-and-their-sensei-courses-from-csv' ) . " $filetmp " . __( 'could not moved to', 'import-users-and-their-sensei-courses-from-csv' ) . " : $filedest");
 			  continue;
 			}
 
@@ -379,7 +377,7 @@ function acui_save_mail_template( $form_data ){
 	update_option( "acui_mail_subject", stripslashes( $form_data["subject_mail"] ) );
 	?>
 	<div class="updated">
-       <p><?php _e( 'Mail template updated correctly', 'import-users-from-csv-with-meta' )?></p>
+       <p><?php _e( 'Mail template updated correctly', 'import-users-and-their-sensei-courses-from-csv' )?></p>
     </div>
     <?php
 }
@@ -432,13 +430,13 @@ function acui_manage_cron_process( $form_data ){
 	?>
 
 	<div class="updated">
-       <p><?php _e( 'Settings updated correctly', 'import-users-from-csv-with-meta' ) ?></p>
+       <p><?php _e( 'Settings updated correctly', 'import-users-and-their-sensei-courses-from-csv' ) ?></p>
     </div>
     <?php
 }
 
 function acui_cron_process(){
-	$message = __('Import cron task starts at', 'import-users-from-csv-with-meta' ) . ' ' . date("Y-m-d H:i:s") . '<br/>';
+	$message = __('Import cron task starts at', 'import-users-and-their-sensei-courses-from-csv' ) . ' ' . date("Y-m-d H:i:s") . '<br/>';
 
 	$form_data = array();
 	$form_data[ "path_to_file" ] = get_option( "acui_cron_path_to_file");
@@ -461,7 +459,7 @@ function acui_cron_process(){
 		acui_cron_process_auto_rename(); // optionally rename with date and time included
 	}
 
-	$message .= __( '--Finished at', 'import-users-from-csv-with-meta' ) . ' ' . date("Y-m-d H:i:s") . '<br/><br/>';
+	$message .= __( '--Finished at', 'import-users-and-their-sensei-courses-from-csv' ) . ' ' . date("Y-m-d H:i:s") . '<br/><br/>';
 
 	update_option( "acui_cron_log", $message );
 }
@@ -583,7 +581,7 @@ function acui_modify_user_edit_admin(){
 
 function acui_delete_attachment() {
 	if( ! current_user_can( 'manage_options' ) )
-		wp_die( __('You are not an adminstrator', 'import-users-from-csv-with-meta' ) );
+		wp_die( __('You are not an adminstrator', 'import-users-and-their-sensei-courses-from-csv' ) );
 
 	$attach_id = intval( $_POST['attach_id'] );
 
