@@ -62,7 +62,7 @@ Plugin will automatically detect:
 == Example Screenshot ==
 ![](https://github.com/SeaMonster-Studios/wp-import-users-and-their-sensei-courses-from-csv/blob/master/csv_example.png)
 
-== Installation ==
+<!-- == Installation ==
 
 ### **Installation**
 
@@ -73,4 +73,4 @@ Now going through the points above, you should now see a new&nbsp;_Import Users,
 
 If you get any error after following through the steps above please contact us through item support comments so we can get back to you with possible helps in installing the plugin and more.
 
-Please read documentation before start using this plugin.
+Please read documentation before start using this plugin. -->
