@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name:	Import users and Sensei courses from CSV
+Plugin Name:	Import Users and their Sensei courses from CSV
 Plugin URI:		https://www.seamonsterstudios.com
 Description:	This plugins allows to importing users and their respective Sensei courses using CSV files to WP database automatically
 Version:		1.0
@@ -140,7 +140,7 @@ function acui_get_restricted_fields(){
 }
 
 function acui_menu() {
-	add_submenu_page( 'tools.php', __( 'Insert users massively (CSV)', 'import-users-from-csv-with-meta' ), __( 'Import users from CSV', 'import-users-from-csv-with-meta' ), 'create_users', 'acui', 'acui_options' );
+	add_submenu_page( 'tools.php', __( 'Insert users massively (CSV)', 'import-users-from-csv-with-meta' ), __( 'Import Users, Sensei Courses from CSV', 'import-users-from-csv-with-meta' ), 'create_users', 'acui', 'acui_options' );
 }
 
 function acui_plugin_row_meta( $links, $file ){
@@ -246,7 +246,7 @@ function acui_check_options(){
 
 function acui_admin_tabs( $current = 'homepage' ) {
     $tabs = array(
-    		'homepage' => __( 'Import users from CSV', 'import-users-from-csv-with-meta' ),
+    		'homepage' => __( 'Import Users, Sensei Courses from CSV', 'import-users-from-csv-with-meta' ),
     		'columns' => __( 'Extra profile fields', 'import-users-from-csv-with-meta' ),
     		'mail-options' => __( 'Mail options', 'import-users-from-csv-with-meta' ),
     		'smtp-settings' => __( 'SMTP settings', 'import-users-from-csv-with-meta' ),

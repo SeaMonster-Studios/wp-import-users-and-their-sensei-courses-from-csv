@@ -1,7 +1,6 @@
-=== Import users from CSV with meta ===
-Contributors: carazo, hornero
-Donate link: http://paypal.me/codection
-Tags: csv, import, importer, meta data, meta, user, users, user meta,  editor, profile, custom, fields, delimiter, update, insert
+=== Import Users and their Sensei Courses from CSV ===
+Contributors: SeaMonster Studios, carazo, hornero
+Tags: csv, sensei, courses, import, importer, meta data, meta, user, users, user meta,  editor, profile, custom, fields, delimiter, update, insert
 Requires at least: 3.4
 Tested up to: 4.9
 Stable tag: 1.10.8.2
@@ -36,7 +35,7 @@ In Codection we have more plugins, please take a look to them.
 
 ## **Basics**
 
-*   Import users from a CSV easily
+*   Import users from a CSV easily, along with their respective Sensei courses
 *   And also extra profile information with the user meta data (included in the CSV with your custom fields)
 *   Just upload the CSV file (one included as example)
 *   All your users will be created/updated with the updated information, and of course including the user meta
@@ -567,10 +566,10 @@ You can get:
 
 ### **Installation**
 
-*   Install **Import users from CSV with meta** automatically through the WordPress Dashboard or by uploading the ZIP file in the _plugins_ directory.
+*   Install **Import Users and their Sensei Courses from CSV** automatically through the WordPress Dashboard or by uploading the ZIP file in the _plugins_ directory.
 *   Then, after the package is uploaded and extracted, click&nbsp;_Activate Plugin_.
 
-Now going through the points above, you should now see a new&nbsp;_Import users from CSV_&nbsp;menu item under Tool menu in the sidebar of the admin panel, see figure below of how it looks like.
+Now going through the points above, you should now see a new&nbsp;_Import Users, Sensei Courses from CSV_&nbsp;menu item under Tool menu in the sidebar of the admin panel, see figure below of how it looks like.
 
 [Plugin link from dashboard](http://ps.w.org/import-users-from-csv-with-meta/assets/screenshot-1.png)
 

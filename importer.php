@@ -669,7 +669,7 @@ function acui_options(){
 		<div id='message-password' class='error'><?php _e( 'Please, read carefully how <strong>passwords are managed</strong> and also take note about capitalization, this plugin is <strong>case sensitive</strong>.', 'import-users-from-csv-with-meta' ); ?></div>
 
 		<div style="float:left; width:80%;">
-			<h2><?php _e( 'Import users from CSV','import-users-from-csv-with-meta' ); ?></h2>
+			<h2><?php _e( 'Import Users, Sensei Courses from CSV','import-users-from-csv-with-meta' ); ?></h2>
 		</div>
 
 		<div style="clear:both;"></div>

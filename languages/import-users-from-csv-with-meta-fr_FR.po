@@ -356,7 +356,7 @@ msgstr ""
 
 #: importer.php:529 import-users-from-csv-with-meta.php:96
 #: import-users-from-csv-with-meta.php:202
-msgid "Import users from CSV"
+msgid "Import Users, Sensei Courses from CSV"
 msgstr "Importer des utilisateurs à partir de CSV"
 
 #: importer.php:539
